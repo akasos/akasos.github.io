@@ -21,7 +21,6 @@ header {
     background-image:url(../img/mountains.jpg);
     background-size: cover;
     background-position: center;
-    /* background-color: grey; */
     height: 100vh;
 
 }
@@ -36,9 +35,9 @@ header {
 }
 
 #logo-wrapper {
-    flex: 0 0 55%;
+ 
+    flex: auto;
     color: rgb(241, 247, 255);
-  
 }
 
 #logo-wrapper > h1 {
@@ -46,24 +45,22 @@ header {
 }
 
 #link-wrapper {
-    flex: 0 0 45%;
+ 
+    flex: auto;
 }
 
 #item-wrapper {
+
    display: flex;
    align-items: center;
-   justify-content: flex-start;
+   justify-content: space-around;
    list-style: none;
-   padding: 0; 
-   font-size: 25px;
-   
+   font-size: 1.6em;
 }
 
 li {
 
-    width: 125px;
     text-align: center;
-
 }
 
 li a:hover {
@@ -81,64 +78,28 @@ li a {
 
 #intro-wrapper {
     color: rgb(241, 247, 255);
-    font-size: 2.0em;
-
     position: relative;
     top: 40%;
     transform: perspective(1px) translateY(-50%);
-
-    
 }
 
 #intro-wrapper > h1 {
+    font-size: 3em;
     text-align: center;
 }
 
 
-@media(max-width: 1024px)
-{
-    #logo-wrapper {
-        flex: 0 0 45%;
-    }
-
-    #link-wrapper {
-        flex: 0 0 50%;
-    }
-
-    
-    #item-wrapper {
-
-    }
-    
-}
-
-
-@media(max-width: 768px)
+@media(min-width: 768px)
 {
 
-    #logo-wrapper {
-        flex: 0 0 40%;
-    }
-
-    #link-wrapper {
-        flex: 0 0 60%;
-    }
-
     #item-wrapper {
+        justify-content: center;
         
-        justify-content: flex-end;
-        font-size: 20px;
-
     }
-
     li {
-        padding-right: 20px;
-        width: auto;
     
+        margin: 0 20px;     
     }
-
-    
-
 }
 
 @media(max-width: 480px)
@@ -146,21 +107,11 @@ li a {
 
     #logo-wrapper {
         text-align: center;
-        flex: 0 0 100%;
         margin-bottom: 10px;
     }
 
-    #link-wrapper {
-
-        flex: 0 0 100%;
-        
-    }
-
-    #item-wrapper {
-
-        flex: 0 0 100%;
-        justify-content: space-between;
-        
+    #intro-wrapper {
+        top: 30%;
     }
    
 }
