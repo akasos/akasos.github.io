@@ -55,7 +55,7 @@ header {
    align-items: center;
    justify-content: space-around;
    list-style: none;
-   font-size: 1.6em;
+   font-size: 1.3em;
 }
 
 li {
@@ -98,8 +98,35 @@ li a {
     }
     li {
     
-        margin: 0 20px;     
+        margin: 0 15px;     
     }
+  
+}
+
+@media(max-width: 768px)
+{
+
+    #item-wrapper {
+        justify-content: center; 
+    }
+    li {
+    
+        margin: 0 15px;     
+    }
+
+    #item-wrapper {
+        font-size: 1em;
+      }
+      #logo-wrapper {
+        margin-bottom: 10px;
+  
+    }
+    
+    #logo-wrapper > h1 {
+
+        font-size: 1.5em;
+       }
+        
 }
 
 @media(max-width: 480px)
@@ -108,13 +135,30 @@ li a {
     #logo-wrapper {
         text-align: center;
         margin-bottom: 10px;
+        flex: 0 0 100%;
+    }
+    #logo-wrapper > h1 {
+        text-align: center;
+        font-size: 1.5em;
+       }
+       
+    #link-wrapper {
+        flex: 0 0 100%;
+    }
+    #item-wrapper {
+      font-size: .7em;
     }
 
     #intro-wrapper {
-        top: 30%;
+        top: 20%;
+    }
+
+    #intro-wrapper > h1 {
+        font-size: 2em;
     }
    
 }
+
 
 
 /*Work section */
