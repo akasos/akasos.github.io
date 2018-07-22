@@ -1,0 +1,5 @@
+#files I do not want committed to my respository.
+# logs/ any log directory buried anywhere deep within my application.
+# /logs/*.txt    relative to the root of the repository. 
+# logs/*.log
+# /logs
