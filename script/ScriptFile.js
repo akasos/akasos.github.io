@@ -37,24 +37,20 @@ $(document).ready(function()   {
 // }
 
 
-if($(window).width() <=768)
-{
+// if($(window).width() <=768)
+// {
     
-        $('#work-wrapper-hill').click(function() {
+//         $('#work-wrapper-hill').click(function() {
     
      
-                $("#work-wrapper-full").insertAfter(this);
+//                 $("#work-wrapper-full").insertAfter(this);
              
     
     
 
     
-        });
+//         });
     
-
-
-
-}
 
 
 });
