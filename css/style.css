@@ -123,6 +123,7 @@ li a {
     height: 100vh;
     background-color: rgb(221, 227, 233);
     color: rgba(255, 255, 255, 0.959);
+    font-size: 1.2em;
 
 
 }
@@ -160,10 +161,13 @@ li a {
 }
 
 
-@media(max-width: 640px)
+
+
+@media(max-width: 700px)
 {
     .work-section {
         align-items: center;
+        font-size: 1em;
     }
 
 
@@ -193,7 +197,7 @@ li a {
     }
 
     .job-description {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
 }
