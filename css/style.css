@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -114,13 +115,16 @@ li a {
 }
 
 
+
+
 /*0Work section*/ 
 .work-section {
 
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    height: 100vh;
+    /* justify-content: space-between;
+    height: 100vh; */
     background-color: rgb(221, 227, 233);
     color: rgba(255, 255, 255, 0.959);
     font-size: 1.2em;
@@ -130,86 +134,100 @@ li a {
 
 .work-container {
     display: flex;
-    margin: 10px 0;
     width: 75%;
-    text-align: center;
-    align-items: center;
-    flex: 1;
-    border-radius: 10px;
+    border-radius: 7px 0px 0px 7px;
+    height: 250px;
+    overflow: hidden;
 }
 
-.columns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
-
+.work-content {
+     /* border: 3px solid blue; */
+     display: flex;
+     align-items: center;
+     text-align: center;
+     flex: 1;
 }
 
 .job-title {
-    flex: 0 0 30%;
-    border-right: 2px solid rgb(221, 227, 233);
-    padding: 10px;
-
-    
+    /* border: 2px solid green; */
+    flex: 1;
 }
 
 .job-description {
-    flex: 0 0 60%;
-
+    flex: 2;
+    padding: 30px;
+    /* border: 2px solid purple; */
+    border-left: 2px solid rgb(221, 227, 233);
 }
 
 
 
 
-@media(max-width: 700px)
+
+
+ @media(max-width: 768px)
 {
     .work-section {
         align-items: center;
-        font-size: 1em;
     }
 
-
-    .columns {
-      
-    flex-direction: column;
-
+    .work-container {
+        margin: 10px;
     }
-
-    .job-title {
-        flex: 0 0 100%;
-        padding-bottom: 20px;
-        text-decoration: underline;
-        border-right: none;
-    }
-
-    .job-description {
-        flex: 0 0 100%;
-    }
-
-}
-
-@media (max-width: 500px)
-{
-    .job-title {
     
+
+    .work-content {
+    flex-direction: column;
+    height:250px;
+
+    }
+
+    .job-title {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: underline;
+        
     }
 
     .job-description {
-        font-size: 0.8em;
-    }
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        padding: 0;
+        border-left: none;
+  
+    } 
 
 }
+
+
+@media (max-width: 550px)
+{
+
+    .work-content {
+        height: 300px;
+    }
+
+    .job-title {
+        flex: 1;
+    }
+
+    .job-description {
+        flex: 4;
+    }
+
+
+}
+
 @media (max-width: 400px)
 {
-    .job-title {
-    
-    }
-
-    .job-description {
-        font-size: 0.8em;
-    }
+   .work-content {
+       height: 350px;
+   }
 
 }
 
