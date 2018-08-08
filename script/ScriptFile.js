@@ -1,64 +1,53 @@
-//When a "work" img is clicked it will display the appropriate text
-//based on that employer.
-
 $(document).ready(function()   { 
 
+//Used to check if the side nav has been manually open or closed;
+let navOpen = false;
+sideNav();
 
-// var employer_text = {
-//     "work-hill": "hill text hill text hill text hill text hill text hill text hill text ",
-//     "work-fedex": "fedex text",
-//     "work-umpire": "hill umpire",
-//     "work-grocery": "hill grocery"
-// }
+$(window).resize(sideNav);
 
-
-// if($(window).width() >= 769)
-// {
-
-//     let current = '';
-
-//     $('.work-history').on('click', event => {
-//         if (current == event.target.id) {
-//             $('#work-text-full').toggle();
-//             $('#work-wrapper-full').toggle();
-//         } else if ($('#work-text-full').is(":visible") && $('#work-wrapper-full').is(":visible")) {
-//             $('#work-text-full').show();
-//             $('#work-wrapper-full').show();
-//         } else {
-//             $('#work-text-full').toggle();
-//             $('#work-wrapper-full').toggle();
-//         }
-
-//         console.log(event);
-//         document.getElementById("work-text").innerHTML = employer_text[event.target.id];
-//         current = event.target.id;
-//     });
-
-// }
-
-
-// if($(window).width() <=768)
-// {
+function sideNav()
+{
+        //Opening and closing the side nav. 
+        if(window.innerWidth <= 768)
+        {
+            $('.toggleNav').on('click', function(){
     
-//         $('#work-wrapper-hill').click(function() {
+                $('#mySidenav').css('width', '250px');
+                $('.landing-page').css("opacity", "0.5");
+                navOpen = true;
     
-     
-//                 $("#work-wrapper-full").insertAfter(this);
-             
+            });
     
+            $('.closebtn').on('click', function(){
     
-
+                $('#mySidenav').css('width', "0px");
+                $('.landing-page').css("opacity", "1");
+                navOpen = false;
     
-//         });
+            });
+        }
     
-
+        /* Close the side nav if the user resizes the window
+           > 786 if they didn't close it manually via the X
+            button. */
+        if(window.innerWidth > 768 && navOpen)
+        {
+            $('#mySidenav').css('width', "0px");
+            $('.landing-page').css("opacity", "1");
+    
+        }
+        /*Reopen the side nav if the user resizes the window
+          less than 768 and didn't manually close it before
+          via the X button */
+        else if(window.innerWidth <= 768 && navOpen)
+        {
+            $('#mySidenav').css('width', '250px');
+            $('.landing-page').css("opacity", "0.5");
+        
+        }
+        
+}
 
 });
-
-
-
-
-
-
-
 

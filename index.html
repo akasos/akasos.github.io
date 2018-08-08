@@ -7,6 +7,7 @@
     <meta name="author" content="Austin Stephens">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script/ScriptFile.js"></script>
     <title>Austin Stephens</title>
@@ -14,31 +15,45 @@
   
   <body>
 
-    <header>
-
-      <div id="nav-wrapper">
-        <div id="logo-wrapper">
-            <h1>Austin Stephens</h1>
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn">&times;</a>
+          <a href="#">Work</a>
+          <a href="#">Projects</a>
+          <a href="#">Hobbies</a>
+          <a href="#">Contact</a>
         </div>
-        <div id="link-wrapper">
-          <ul id="item-wrapper">
+
+    <div class="landing-page">
+      <nav class="nav-wrapper">
+        <div class="logo-social-wrapper">
+            <h1>AKS</h1>
+            <ul class="social-media-list">
+              <li class="social"><a href="#"><i class="fa fa-github"></i></a></li>
+              <li class="social"><a href="#"><i class="fa fa-github"></i></a></li>
+              <li class="social"><a href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+      
+        <div class="website-link-wrapper">
+          <a href="#" class="toggleNav">☰ Menu</a>
+          <ul class="website-links" id="websiteLinks">
             <li><a href="#">Work</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Hobbies</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
 
-
-      <div id="intro-wrapper">
+      <div class="intro-wrapper">
         <h1>Coming Soon</h1>
-        </div>
-
-    </header>
+      </div>
+    </div>
     
 
       <section class="work-section">
+
+        <div class="work-header-container"><h2 id="work-header">Work Experience</h2></div>
 
         <div class='work-container' id="hill" style="background-color: rgba(142, 29, 248, 0.705)">
             <div class="work-content">
