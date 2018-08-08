@@ -184,6 +184,10 @@ a:hover {
         margin-bottom: 20px;
 
     }
+
+    .toggleNav {
+        padding-right: 10px;
+    }
     .nav-wrapper {
         
         flex: 0 0 100%;
@@ -196,6 +200,10 @@ a:hover {
      .website-link-wrapper{
       white-space: nowrap;
      }
+
+     .toggleNav {
+        padding-right: 4px;
+    }
 
 }
 
