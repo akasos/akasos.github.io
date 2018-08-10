@@ -244,7 +244,7 @@ a:hover {
 #work-header {
     width: 25%;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-left: 0px;
 }
 
@@ -352,12 +352,56 @@ a:hover {
 
 
 
-
-
-
-
 /*Hobbies sections */
 
+.hobbies-section {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-size: 1.2em;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.959);
+    background-color: rgb(167, 190, 212);
+    color: black;
+  
+}
+
+.hobbie-header-container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    background-color: rgb(55, 139, 235);
+    
+}
+#hobbie-header {
+    width: 25%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 25%;
+    color: white;
+}
+
+.hobbie-container {
+    border: 1px solid blue;
+    height: 500px;
+    width: 300px;
+    padding: 5px;
+    background-color: rgb(221, 227, 233);
+}
+
+.hobbie-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hobbie {
+    text-align: center;
+    border: 1px solid purple;
+    margin-bottom: 5px;
+   
+}
 
 
 

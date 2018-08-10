@@ -94,6 +94,7 @@ function debounce(func, wait = 15, immediate = true) {
         };
     }
 
+
 const slideInWorkExp = document.querySelectorAll('.work-container');
 
 function checkSlide(e) {
@@ -116,6 +117,7 @@ function checkSlide(e) {
     }
 
 window.addEventListener('scroll', debounce(checkSlide));
+
 
 
 });
