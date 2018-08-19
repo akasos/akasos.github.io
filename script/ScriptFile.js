@@ -116,8 +116,16 @@ function checkSlide(e) {
         });
     }
 
-window.addEventListener('scroll', debounce(checkSlide));
-
+if(window.innerWidth > 1024)
+{
+    window.addEventListener('scroll', debounce(checkSlide));
+}
+else
+{
+    slideInWorkExp.forEach(workExp => {
+        workExp.classList.add('active');
+    })
+}
 
 
 });
