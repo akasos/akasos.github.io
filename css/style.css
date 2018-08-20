@@ -384,7 +384,7 @@ a:hover {
 }
 
 .hobbie-container {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 550px;
     display: flex;
     align-items: center;
@@ -403,37 +403,53 @@ a:hover {
 
 .hobbie-title {
     text-align: center;
-    border: 1px solid purple;
+    color: rgba(100, 174, 235, 0.849)
+    /* border: 1px solid purple; */
   
 }
 
 .hobbie-image {
     height: 300px;
     width: 300px;
-    margin-top: 10px;
-    box-shadow: 2px 2px 2px rgba(160, 52, 52, 0.959);
+    margin-top: 8px;
+    box-shadow: 0px 0px 10px rgba(64, 163, 230, 0.979);
+    border-radius: 5px
 
   
 }
 
 .hobbie-description {
     display: flex;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     flex: 1;
     margin: 10px 0px;
     border-radius: 3px;
     flex-wrap: wrap;
-    
-
+  
 }
 
 .hobbie-description > *
-{
+{   display: flex;
     flex: 50%;
-    border: 1px solid goldenrod;
+    /* border: 1px solid goldenrod; */
+    align-items: center;
     text-align: center;
-
+    /* border-bottom: 1px solid rgba(64, 163, 230, 0.979); */
+    box-shadow: 0px 4px 2px -2px rgba(64, 163, 230, 0.979);
+    
 }
+
+.hobbie-description div:nth-last-of-type(-n + 2){
+    border-bottom: none;
+}
+
+.hobbie-description div span {
+    display: block;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+
 
 @media (max-width: 1267px)
 {
