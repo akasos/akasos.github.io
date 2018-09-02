@@ -128,4 +128,24 @@ else
 }
 
 
+/*hovering over contact section */
+
+const contact_links_a = document.querySelectorAll('.contact-hover');
+
+function addBorder(e) {
+const div = document.querySelector(`div[data-contact="${e.srcElement.id}"]`);
+// relatedTarget.classList.add('testt')
+div.classList.add('contact-mouseenter');
+
+}
+
+
+function removeBorder(e) {
+    const div = document.querySelector(`div[data-contact="${e.srcElement.id}"]`);
+div.classList.remove('contact-mouseenter');
+}
+contact_links_a.forEach(link => link.addEventListener('mouseenter', addBorder))
+contact_links_a.forEach(link => link.addEventListener('mouseleave', removeBorder))
+
+
 });

@@ -43,9 +43,9 @@ body, html{
     text-decoration: none;
 }
 
-a:hover {
+.nav-wrapper ul a:hover {
     text-decoration: none;
-    color: rgb(81, 83, 85);
+    color: rgb(41, 226, 155);
 }
 
 .logo-social-wrapper {
@@ -137,12 +137,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
 /*Headliner */
 .intro-wrapper {
     color: rgb(241, 247, 255);
@@ -228,7 +222,7 @@ a:hover {
     /* justify-content: space-between; */
     min-height: 100vh;
     background-color: white;
-    color: rgba(255, 255, 255, 0.959);
+    color: #E9EBEE;
     font-size: 1.2em;
 }
 
@@ -465,13 +459,221 @@ a:hover {
     }
 }
 
-@media (max-width: 640px)
-{
- 
 
+
+
+
+/*contact */
+.contact-section {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    background-color:#F5F5F5;
+    height: 100vh;
+}
+
+.contact-header-container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border: 1px solid purple;
+    background-color: rgb(55, 139, 235);
+}
+
+#contact-header {
+    color: white;
+    width: 25%;
+    margin-left: 75%;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    border: 1px solid yellow;
+}
+.contact-container {
+    border: 1px solid purple;
+}
+
+.contact-content {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 175px;
+    justify-content: space-between;
+}
+
+.contact-content a {
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #C5C5C5;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-a-wrapper {
+    border: 1px solid transparent;
+}
+
+.contact-mouseenter {
+    border: 1px solid rgba(105, 105, 105, 0.979) ;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+/*footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    background-color:#16a6b6;
+    font-size: 1.2em;
+}
+
+.f-website-links-wrapper {
+    /* border: 1px solid green; */
+    flex: 1;
+    display: flex;
+}
+
+.f-website-links {
+    display: flex;
+    /* border: 1px solid yellow; */
+    list-style-type: none;
+    flex-basis: 80%;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.f-website-links li {
+    margin-top: 20px;
+    /* border: 1px solid purple; */
+}
+
+.f-website-links li a {
+    color:  #202121;
+    transition: all 0.3s ease-in-out;
+}
+
+.f-website-links li a:hover {
+    color: #49c5b6;
+    cursor: pointer;
+    
+}
+
+
+.f-social-media-links-wrapper {
+    flex: 1;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.f-social-media-links {
+  /* border: 1px solid purple; */
+  list-style-type: none;
+  flex-basis: 40%;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.f-social-media-links li {
+    margin-top: 15px;
+    /* border: 1px solid rosybrown; */
+    width: 2em;
+    height: 2em;
+    display: flex;
+    
+}
+
+.f-social-media-links li a {
+    text-align: center;
+    color:  #202121;
+    flex: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.f-social-media-links li a:hover {
+    border-color: #49c5b6;
+}
+
+.f-social-media-links li a:hover {
+    text-decoration: none;
+    color: #49c5b6;
+    cursor: pointer;
+}
+
+@media (max-width: 1267px)
+{
+    .f-website-links {
+        
+        flex-basis: 100%;
+       
+    }
+    
+    .f-social-media-links {
+        justify-content: space-around;
+        flex-basis: 60%;
+              
+    }
 
 }
 
+@media (max-width: 629px)
+{
+    .f-website-links-wrapper {
+        flex: 1 1 100%;
+    }
+
+    .f-website-links-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f-website-links li {
+        margin: 0px;
+    }
+
+
+
+
+    .f-social-media-links-wrapper {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .f-social-media-links {
+        align-items: center;
+    }
+
+    .f-social-media-links-wrapper li {
+        margin: 0px;
+    }
+
+}
 
 
 
