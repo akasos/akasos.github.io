@@ -1,0 +1,122 @@
+
+/*Work section*/ 
+.work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    min-height: 100vh;
+    background-color: white;
+    color: #E9EBEE;
+    font-size: 1.2em;
+}
+
+.work-header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(55, 139, 235);
+    
+}
+
+#work-header {
+
+    width: 25%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 0px;
+}
+
+.work-container {
+    display: flex;
+    width: 0%;
+    border-radius: 7px 0px 0px 7px;
+    height: 250px;
+    overflow: hidden;
+    transition: all .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.work-container.active {
+    width: 75%;
+}
+
+.work-content {
+     /* border: 3px solid blue; */
+     display: flex;
+     align-items: center;
+}
+
+.job-title {
+    /* border: 2px solid green; */
+    flex: 1 0 0px ;
+    text-align: center;
+}
+
+.job-description {
+    flex: 2 0 0px ;
+    padding: 30px;
+    /* border: 2px solid purple; */
+    border-left: 2px solid rgb(221, 227, 233);
+    text-align: justify;
+}
+
+@media(max-width: 1024px)
+{
+    .work-container {
+        height: auto;
+    }
+}
+
+ @media(max-width: 768px)
+{
+    .work-section {
+        align-items: center;
+    }
+
+    .work-header-container {
+        justify-content: center;
+    }
+
+    #work-header {
+        flex: 50%;
+    }
+    
+    .work-container {
+        margin: 10px;
+        border-radius: 7px;
+    
+    }
+
+    .work-content {
+        flex-direction: column;
+    }
+
+    .job-title {
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        flex: none;
+    }
+
+    .job-description {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        padding: 0;
+        border-left: none;
+        flex: none;
+        margin: 10px 15px 15px 15px;
+    } 
+}
+
+@media (max-width: 550px)
+{
+
+    .job-description {
+        text-align: left;
+    }
+
+}

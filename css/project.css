@@ -1,0 +1,45 @@
+.project-section {
+    min-height: 100vh;
+    background-color:grey;
+    font-size: 1.2em;
+    color: #E9EBEE;
+}
+
+.project-header-container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(55, 139, 235);
+}
+
+#project-header{
+    
+    width: 25%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.project-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+ 
+
+}
+
+.project-bg-pictures {
+    display: none;
+}
+
+.project-sm-image-slider {
+    display: flex;
+}
+
+.project-sm-img-container {
+}
+
+.project-sm-pictures {
+    width: 100%;
+}
