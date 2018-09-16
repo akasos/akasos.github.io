@@ -1,40 +1,99 @@
 .project-section {
-    min-height: 100vh;
+
     background-color:grey;
     font-size: 1.2em;
     color: #E9EBEE;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  
+  
 }
 
-.project-header-container {
+ .project-header-container {
     display: flex;
     align-items: center;
     height: 100px;
     width: 100%;
     background-color: rgb(55, 139, 235);
+    border: 1px solid gold;
+    
 }
 
+
 #project-header{
-    
     width: 25%;
     text-align: center;
     margin-left: 25%;
 }
 
 .project-container {
-    margin-top: 20px;
     display: flex;
-    justify-content: center;
-    background-color: white;
- 
+    flex-direction: column;
+    border: 1px solid purple;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.project-bg-image-container {
+    margin: 20px 0px;
 
 }
 
 .project-bg-pictures {
-    display: none;
+    width: 100%;
+   
+    
 }
 
-.project-sm-image-slider {
+.project-sm-image-container {
     display: flex;
+}
+
+.project-sm-pictures {
+  height: 100%;
+ 
+}
+
+
+
+
+@media(max-width: 768px) {
+    #project-header {
+        margin-left: 0px;
+        width: 100%;
+           
+    }
+
+
+
+/*
+.project-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+ 
+    
+}
+
+
+.project-bg-image-container {
+    display: flex;
+    margin-bottom: 2%;
+    align-self: center;
+}
+
+.project-bg-pictures {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.project-sm-image-container {
+    display: flex;
+
 }
 
 .project-sm-img-container {
@@ -42,4 +101,5 @@
 
 .project-sm-pictures {
     width: 100%;
-}
+
+} */
