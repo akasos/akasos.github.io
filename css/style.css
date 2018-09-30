@@ -1,6 +1,6 @@
 
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,6 +18,11 @@ body, html{
 
 }
 
+.page-content {
+    max-width: 1500px;
+    margin: 0px auto;
+    /* border: 1px solid red; */
+}
 
 
 

@@ -8,28 +8,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="css/landing.css"/>
-    <link rel="stylesheet" type="text/css" href="css/work.css"/>
+    <link rel="stylesheet" type="text/css" href="css/about.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="css/project.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/work.css"/>
     <link rel="stylesheet" type="text/css" href="css/project.css"/>
     <link rel="stylesheet" type="text/css" href="css/hobbie.css"/>
-    <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contact.css"/> -->
     <link rel="stylesheet" type="text/css" href="css/footer.css"/>
 
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+    <!--Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-
-
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
+    <link href="https://fonts.googleapis.com/css?family=Teko:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Economica|Quicksand" rel="stylesheet">
+    <!--Jquery-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    
-
-    
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!--Javascript-->
     <script src="script/ScriptFile.js"></script>
 
     <title>Austin Stephens</title>
@@ -37,43 +38,140 @@
   
   <body>
 
-      <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn">&times;</a>
-          <a href="#work">Work</a>
-          <a href="#projects">Projects</a>
-          <a href="#hobbies">Hobbies</a>
-          <a href="#contact">Contact</a>
-        </div>
 
-    <div class="landing-page">
-      <nav class="nav-wrapper">
-        <div class="logo-social-wrapper">
-            <h1>AKS</h1>
-            <ul class="social-media-list">
-              <li class="social"><a href="https://github.com/akasos"><i class="fa fa-github"></i></a></li>
-              <li class="social"><a href="https://www.linkedin.com/in/austin-stephens-09143a159/"><i class="fa fa-linkedin"></i></a></li>
-              <li class="social"><a href="https://www.instagram.com/akasos/"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div>
-      
-        <div class="website-link-wrapper">
+    <!--Navbar-->
+      <nav>
+        <div class="navbar-container">
+          <h1 class="logo">AKS</h1>
           <a href="#" class="toggleNav">☰ Menu</a>
-          <ul class="website-links" id="websiteLinks">
-            <li><a href="#work">Work</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <div class="nav-links">
+            <a href="#work">About</a>
+            <a href="#projects">Portfoilo</a>
+            <a href="#contact">Contact</a>
+          </div>
+        
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+            <a href="#work">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
+     
       </nav>
 
+
+    <!--Header-->
+    <header class="intro-container">
+      <img class="intro-image" src="/img/foggy-forest.jpg" alt="foggy forest"/>
+      <h1 id="intro-introduction" class="intro-introduction">Hello, I'am Austin Stephens</h1>
+    </header>
+
+
+
+    <!--Main Page Content-->
+   <div class="page-content">
+
+
+    <!--About-->
+    <section class="about-container">
+      <div class="header"><h2>About me</h2></div>
+      <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+        but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+     
+      <div class="photo-container">
+        <div class="photo-header">
+          <i class="material-icons">face</i>
+          <!-- <span class="about-title-photo">This is me</span> -->
+        </div>
+        <img class="photo" src="img/photo_me.jpg"/>
+      </div>
+
+      <div class="hobbies-container">
+        <div class="hobbies-header">
+          <div class="dropbtn-hobbies"><span>Hobbies</span></div>
+          <span class="hobbies-title">Hobbies</span>
+        </div>
+        <div class="hobbies-wrapper">
+          <div class="hobby">
+            <img class="hobby-icon" src="img/home-plate.png" alt="softball"/>
+            <p>Softball</p>
+          </div>
+          <div class="hobby">
+            <img class="hobby-icon" src="img/shoe.png" alt="running"/>
+            <p>Running</p>
+          </div>
+          <div class="hobby">
+            <img class="hobby-icon" src="img/book.png" alt="book"/>
+            <p>Reading</p>
+          </div>
+          <div class="hobby">
+            <img class="hobby-icon" src="img/podcast.png" alt="podcast"/>
+            <p>Podcast</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-container">
+        <div class="skills-header">
+          <p>Techincal Skills<p>
+        </div>
+  
+        <div class="skills-wrapper">
+            <p class="skill-title">HTML, CSS, Javascript</p>   
+          <div class="skill-box" id="skill-box">
+            <div class="skill" id="html"><span>50%</span></div>
+          </div>
+            <p class="skill-title">Angular, React, Node</p>   
+          <div class="skill-box">
+            <div class="skill" id="angular"><span>20%</span></div>
+          </div>
+            <p class="skill-title">Java</p>   
+          <div class="skill-box">
+            <div class="skill" id="java"><span>70%<span></div>
+          </div>
+        </div>
+  
+        <div class='resume-wrapper'><a href="resume/betterlookingblue.pdf" class="resume" download><i class="material-icons download-icon">
+            cloud_download</i><span class="resume-text">Download Resume</span></a></div>
+    
+
+
+
+      </div>
+
+    </section>
+
+
+    <!--Portfolio-->
+    <section class="portfolio-container">
+
+
+
+    </section>
+
+
+    <!--Contact-->
+    <section class="contact-container">
+
+    </section>
+
+
+
+   </div>
+
+<!-- 
+    <div class="landing-page">
       <div class="intro-wrapper">
         <h1>Coming Soon</h1>
       </div>
-    </div>
+    </div> -->
     
 
-      <section class="work-section" id="work">
+      <!-- <section class="work-section" id="work">
 
         <div class="work-header-container"><h2 id="work-header">Work Experience</h2></div>
 
@@ -125,37 +223,37 @@
           </div>
         </div>
 
-      </section>
+      </section> -->
 
-      <section class="project-section" id="projects">
+      <!-- <section class="project-section" id="projects">
         
         <div class="project-header-container"><h2 id="project-header">Projects</h2></div>
 
         <div class="project-container">
 
          <div class="project-bg-images-container">
-         <div class="bg-img-container"><img class="project-bg-pictures" src="img/snow.jpg" width='700' height="200"></div> 
+         <div class="bg-img-container"><img class="project-bg-pictures" src="img/snow.jpg" width='700' height="200">flex</div> 
          <div class="bg-img-container"><img class="project-bg-pictures" src="img/lake.jpg" width='700' height="200"></div> 
          <div class="bg-img-container"><img class="project-bg-pictures" src="img/country.jpg" width='700' height="200"></div> 
          <div class="bg-img-container"><img class="project-bg-pictures" src="img/snow.jpg" width='700' height="200"></div> 
          <div class="bg-img-container"><img class="project-bg-pictures" src="img/snow.jpg" width='700' height="200"></div> 
          <div class="bg-img-container"><img class="project-bg-pictures" src="img/lake.jpg" width='700' height="200"></div> 
   
-         </div>
+         </div> -->
 
          <!-- <div class="project-big-image-container">
           <div><img class="project-bg-pictures"></div>
 
          </div> -->
          
-         <div class="project-sm-images-container">
+         <!-- <div class="project-sm-images-container">
            <div class="sm-img-container"><img class="project-sm-pictures" id='0' src="img/snow.jpg"></div>
            <div class="sm-img-container"><img class="project-sm-pictures" id='1' src="img/lake.jpg"></div>
            <div class="sm-img-container"><img class="project-sm-pictures" id='2' src="img/country.jpg"></div>
            <div class="sm-img-container"><img class="project-sm-pictures" id='3' src="img/snow.jpg"></div>
            <div class="sm-img-container"><img class="project-sm-pictures" id='4' src="img/lake.jpg"></div>
 
-        </div>
+        </div> -->
 
         <!-- <div class="buttons">
           <button class="prev">
@@ -165,7 +263,7 @@
             <span class="offscreen">Next</span>
           </button>
         </div> -->
-
+<!-- 
       </div>
     
   
@@ -312,10 +410,10 @@
        
 
 
-      </section>
+      </section> -->
 
     
-      <footer>
+      <!-- <footer>
         <div class="f-website-links-wrapper">
         <ul class="f-website-links">
           <li><a href="#work">Work</a></li>
@@ -327,7 +425,7 @@
 
       <div class="f-logo">
         <p class="f-logo-title">AKS</p>
-      </div>
+      </div> -->
 
       <!-- <div class="f-social-media-links-wrapper">
       <ul class="f-social-media-links">
@@ -336,7 +434,7 @@
         <li><a><i class="fa fa-instagram"></i></a></li>
       </ul>
       </div> -->
-    </footer>
+    <!-- </footer> -->
   
   </body>
 
