@@ -74,6 +74,7 @@ $(document).ready(function()
         }
     });
 
+    /*work around for chrome mobile browser */
     let width = $(window).width();
     $(window).resize(function(){
         if(window.innerWidth > 480 && width != $(window).width())
@@ -102,6 +103,29 @@ $(document).ready(function()
        skill3.style.width = `${wrapper.offsetWidth * .7}px`;
        
    
+   }
+
+   /*Side margins for about and project containers */
+//    $(window).resize()
+   let intro_image = document.querySelector('.intro-image');
+   let about_container = document.querySelector('.about-container');
+   let portfolio_container = document.querySelector('.portfolio-container');
+   sideMargin();
+   $(window).resize(sideMargin);
+   function sideMargin()
+   {
+     console.log("what");
+     if(window.innerWidth <= intro_image.offsetWidth)
+    {
+        about_container.style.margin = "25px 20px 0px 20px";
+        portfolio_container.style.margin = "25px 20px 0px 20px";
+    }
+
+    else if(window.innerWidth > intro_image.offsetWidth)
+    {
+        about_container.style.margin = "25px 0px 0px 0px";
+        portfolio_container.style.margin = "25px 0px 0px 0px";
+    }
    }
   
 });
