@@ -54,12 +54,14 @@ $(document).ready(function()
 
     
     /* Toggle Hobbies */
+    let hobbies_open = false;
     $('.dropbtn-hobbies').click(function(){
         if($('.hobbies-wrapper').is(':hidden'))
         {
             $('.hobbies-wrapper').css('display', 'flex');
             $('.hobbies-wrapper').css('margin-top', '10px');
             $('.hobbies-wrapper').css('margin-bottom', '30px');
+            hobbies_open = true;
 
         }
         else if (!$('.hobbies-wrapper').is(':hidden'))
@@ -67,20 +69,23 @@ $(document).ready(function()
             $('.hobbies-wrapper').css('display', 'none');
             $('.hobbies-wrapper').css('margin-top', '0px');
             $('.hobbies-wrapper').css('margin-bottom', '0px');
+            hobbies_open = false;
        
         }
     });
 
-    // $(window).resize(function(){
-    //     if(window.innerWidth > 480)
-    //     {
-    //         $('.hobbies-wrapper').css('display', 'flex');
-    //     }
-    //     else if(window.innerWidth <= 480)
-    //     {
-    //         $('.hobbies-wrapper').css('display', 'none');
-    //     }
-    // });
+    let width = $(window).width();
+    $(window).resize(function(){
+        if(window.innerWidth > 480 && width != $(window).width())
+        {
+            $('.hobbies-wrapper').css('display', 'flex');
+            hobbies_open = false;
+        }
+        else if(window.innerWidth <= 480 && width != $(window).width() && !hobbies_open)
+        {
+            $('.hobbies-wrapper').css('display', 'none');
+        }
+    });
 
 
     /*Skill Width*/
