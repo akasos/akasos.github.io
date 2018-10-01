@@ -71,16 +71,16 @@ $(document).ready(function()
         }
     });
 
-    $(window).resize(function(){
-        if(window.innerWidth > 480)
-        {
-            $('.hobbies-wrapper').css('display', 'flex');
-        }
-        else if(window.innerWidth <= 480)
-        {
-            $('.hobbies-wrapper').css('display', 'none');
-        }
-    });
+    // $(window).resize(function(){
+    //     if(window.innerWidth > 480)
+    //     {
+    //         $('.hobbies-wrapper').css('display', 'flex');
+    //     }
+    //     else if(window.innerWidth <= 480)
+    //     {
+    //         $('.hobbies-wrapper').css('display', 'none');
+    //     }
+    // });
 
 
     /*Skill Width*/
