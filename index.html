@@ -7,18 +7,7 @@
     <meta name="author" content="Austin Stephens">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
-    <link rel="stylesheet" type="text/css" href="css/landing.css"/>
-    <link rel="stylesheet" type="text/css" href="css/about.css"/>
-    <link rel="stylesheet" type="text/css" href="css/project.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="css/work.css"/>
-    <link rel="stylesheet" type="text/css" href="css/project.css"/>
-    <link rel="stylesheet" type="text/css" href="css/hobbie.css"/>
-    <link rel="stylesheet" type="text/css" href="css/contact.css"/> -->
-    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
 
-    
     <!--Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--Fonts-->
@@ -32,11 +21,37 @@
 
     <!--Javascript-->
     <script src="script/ScriptFile.js"></script>
+    
+    <!--Google Maps-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw6nbw1YUqNuPGnXDLlrz1tZcpzQ4eTE0&callback=myMap"></script>
 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/landing.css"/>
+    <link rel="stylesheet" type="text/css" href="css/about.css"/>
+    <link rel="stylesheet" type="text/css" href="css/project.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+// <!-- <link rel="stylesheet" type="text/css" href="css/footer.css"/> -->
     <title>Austin Stephens</title>
+
+    <script>
+        /* Google Maps */
+       function myMap() {
+       let myCenter = new google.maps.LatLng(41.222759, -111.970421);
+       let mapCanvas = document.getElementById('googleMap');
+       let mapOptions = {center: myCenter, zoom: 6};
+       let map = new google.maps.Map(mapCanvas, mapOptions);
+       let marker = new google.maps.Marker({position: myCenter}); 
+       marker.setMap(map);
+
+ 
+       }
+     </script>
   </head>
   
   <body>
+
 
 
     <!--Navbar-->
@@ -198,285 +213,26 @@
 
     <!--Contact-->
     <section class="contact-container">
+      <div class="contact-header"><h2>Contact me</h2></div>
 
+      <div class="contact-info-container">
+        <p class="contact-info location"><i class="material-icons contact-icons">location_on</i> Ogden, UT</p>
+        <p class="contact-info phone"><i class="material-icons contact-icons">phone</i>801-721-5994</p>
+        <p class="contact-info email"><i class="material-icons contact-icons">email</i>austinstephens424@gmail.com</p>
+      </div>
+  
+
+      <div id="googleMap">
+
+      </div>
+
+
+  
     </section>
 
 
 
    </div>
-
-<!-- 
-    <div class="landing-page">
-      <div class="intro-wrapper">
-        <h1>Coming Soon</h1>
-      </div>
-    </div> -->
-    
-
-      <!-- <section class="work-section" id="work">
-
-        <div class="work-header-container"><h2 id="work-header">Work Experience</h2></div>
-
-        <div class='work-container' id="hill" style="background-color: #947cb0">
-            <div class="work-content">
-                <h3 class="job-title">Hill Air Force Base</h3>
-                <p class="job-description"> I currently work at HAFB as a Software Engineer. I work on a team that develops
-                    and maintains avionics software for the F-16. Work life involves coding in C and C++ and writing an occasional
-                    Bash or Perl script here or there. On the daily, we do regression testing, code functional testing, document 
-                    re-writes, code changes and everything else that is needed to keep the pilots happy and flying.  
-                </p>
-            </div>
-        </div>
-
-        <div class='work-container' id="fedex" style="background-color: #ee5a56">
-          <div class="work-content">
-            <h3 class="job-title">Fedex Express</h3>
-            <p class="job-description">At FedEx I did what you probably think I did. I did pickups and deliveries.
-                                       During the evenings I would help load out-bound packages into cans which would then
-                                       to be sent off to the airport for further processing. I was also a Dangerous Good's Specialist which
-                                       involved me making sure no hazardous materials were unfit for travel.
-                                       On top of all that I drove like a champ and was accident-free for the entire 3 year's I worked there. 
-             </p>
-          </div>
-        </div>
-
-        <div class='work-container' id="umpire" style="background-color: #ffcb5e">
-          <div class="work-content">
-            <h3 class="job-title">Umpire</h3>
-            <p class="job-description">Working as an Umpire I heard it all. I officated both Little League and Adult Slow Pitch Softball for a time.
-                                       Most nights the games ran pretty smoothly but then others it would turn into a backyard brawl. Aside from
-                                       just calling balls and strikes I learned how to pop, crack, spit and chew sunflower seeds like a pro. Play ball!
-
-
-             </p>
-          </div>
-        </div>
-
-        <div class='work-container' id="grocery" style="background-color: rgba(82, 121, 136, 0.452)">
-          <div class="work-content">
-            <h3 class="job-title">Food & Grocery</h3>
-            <p class="job-description"> I started my young career bagging groceries and eventually switched roles.
-                                        I worked in the General Merchandise Dept for a time before making
-                                        the switch over to Produce. Working in Produce I would 
-                                        clean, trim, and rotate product to keep my Dept smelling fresh like a daisy.
-                                        Every now and again a customer would ask for my help in picking them out a watermelon..sadly from
-                                        there my help was never needed again after that...
-             </p>
-          </div>
-        </div>
-
-      </section> -->
-
-      <!-- <section class="project-section" id="projects">
-        
-        <div class="project-header-container"><h2 id="project-header">Projects</h2></div>
-
-        <div class="project-container">
-
-         <div class="project-bg-images-container">
-         <div class="bg-img-container"><img class="project-bg-pictures" src="img/snow.jpg" width='700' height="200">flex</div> 
-         <div class="bg-img-container"><img class="project-bg-pictures" src="img/lake.jpg" width='700' height="200"></div> 
-         <div class="bg-img-container"><img class="project-bg-pictures" src="img/country.jpg" width='700' height="200"></div> 
-         <div class="bg-img-container"><img class="project-bg-pictures" src="img/snow.jpg" width='700' height="200"></div> 
-         <div class="bg-img-container"><img class="project-bg-pictures" src="img/snow.jpg" width='700' height="200"></div> 
-         <div class="bg-img-container"><img class="project-bg-pictures" src="img/lake.jpg" width='700' height="200"></div> 
-  
-         </div> -->
-
-         <!-- <div class="project-big-image-container">
-          <div><img class="project-bg-pictures"></div>
-
-         </div> -->
-         
-         <!-- <div class="project-sm-images-container">
-           <div class="sm-img-container"><img class="project-sm-pictures" id='0' src="img/snow.jpg"></div>
-           <div class="sm-img-container"><img class="project-sm-pictures" id='1' src="img/lake.jpg"></div>
-           <div class="sm-img-container"><img class="project-sm-pictures" id='2' src="img/country.jpg"></div>
-           <div class="sm-img-container"><img class="project-sm-pictures" id='3' src="img/snow.jpg"></div>
-           <div class="sm-img-container"><img class="project-sm-pictures" id='4' src="img/lake.jpg"></div>
-
-        </div> -->
-
-        <!-- <div class="buttons">
-          <button class="prev">
-            <span class="offscreen">Previous</span>
-          </button>
-          <button class="next">
-            <span class="offscreen">Next</span>
-          </button>
-        </div> -->
-<!-- 
-      </div>
-    
-  
-      </section>
-
-
-
-      <section class="hobbies-section" id="hobbies">
-
-        <div class="hobbie-header-container"><h2 id="hobbie-header">Hobbies</h2></div>
-
-        <div class="hobbie-container" id="running">
-          <div class="hobbie-content">
-            <h3 class="hobbie-title">Running</h3>
-            <img class="hobbie-image" src="img/running.png">
-            <div class="hobbie-description">
-              <div class="question"><span>Marathons:</span></div>
-              <div class="answer"><span>6</span></div>
-              <div class="question"><span>Fastest Race:</span></div>
-              <div class="answer"><span>2:52:25</span></div>
-              <div class="question"><span>Next Race:</span></div>
-              <div class="answer"><span>TBD</span></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="hobbie-container" id="reading">
-            <div class="hobbie-content">
-                <h3 class="hobbie-title">Reading</h3>
-                <img class="hobbie-image" src="img/reading.png">
-                <div class="hobbie-description">
-                  <div class="question"><span>Reading:</span></div>
-                  <div class="answer"><span>The Fifth To Die</span></div>
-                  <div class="question"><span>Last Read:</span></div>
-                  <div class="answer"><span>The Fourth Monkey</span></div>
-                  <div class="question"><span>Recommend:</span></div>
-                  <div class="answer"><span>It</span></div>
-                </div>
-                
-            </div>
-        </div>
-
-        <div class="hobbie-container" id="softball">
-          <div class="hobbie-content">
-                <h3 class="hobbie-title">Softball</h3>
-                <img class="hobbie-image"  src="img/softball.png">
-                <div class="hobbie-description">
-                    <div class="question"><span>Jersey #:</span></div>
-                    <div class="answer"><span>6</span></div>
-                    <div class="question"><span>Position:</span></div>
-                    <div class="answer"><span>Left Center</span></div>
-                    <div class="question"><span>Batting Avg:</span></div>
-                    <div class="answer"><span>1.000</span></div>
-                  </div>
-        </div>
-      </div>
-
-        <div class="hobbie-container" id="podcast">
-            <div class="hobbie-content">
-                <h3 class="hobbie-title">Podcast</h3>
-                <img class="hobbie-image" src="img/podcast.png">
-                <div class="hobbie-description">
-                    <div class="question"><span>Podcast 1:</span></div>
-                    <div class="answer"><span>Joe Rogan</span></div>
-                    <div class="question"><span>Podcast 2:</span></div>
-                    <div class="answer"><span>Stuff You Should Know</span></div>
-                    <div class="question"><span>Podcast3:</span></div>
-                    <div class="answer"><span>We're Alive</span></div>
-                </div>
-            </div>
-        </div>
-  
-
-      </section>
-
-    
-
-      <section class="contact-section" id="contact">
-
-    
-          <div class="contact-header-container"><h2 id="contact-header">Contact</h2></div>
-
-
-          <div class="contact-wrapper">
-
-          <div class="contact-container" id="contact-container-1">
-            <div class="contact-content">
-              <div data-contact="email" class="contact-a-wrapper">
-              <a id="email" class="contact-hover"><i class="fa fa-envelope" ></i></a>
-              </div>
-              <h4>Email</h4>
-              <p>austinstephens424@gmail.com</p>
-
-            </div>
-
-
-          </div>
-          
-          <div class="contact-container" id="contact-container-2">
-              <div class="contact-content">
-                  <a><i class="fa fa-phone"></i></a>
-                  <h4>Phone</h4>
-                  <p>801-721-5994</p>
-                </div>
-
-          </div>
-          
-          <div class="contact-container" id="contact-container-3">
-              <div class="contact-content">
-                  <div data-contact="github" class="contact-a-wrapper">
-                  <a href="https://github.com/akasos" id="github" data-contact="github" class="contact-hover"><i class="fa fa-github"></i></a>
-                  </div>
-                  <h4>GitHub</h4>
-                  <p>Check it out</p>
-
-                </div>
-          </div>
-          
-          <div class="contact-container" id="contact-container-4">
-              <div class="contact-content">
-                  <div data-contact="linkedin" class="contact-a-wrapper">
-                  <a href="https://www.linkedin.com/in/austin-stephens-09143a159/" id="linkedin" data-contact="linkedin" class="contact-hover"><i class="fa fa-linkedin"></i></a>
-                  </div>
-                  <h4>Linkedin</h4>
-                  <p>Check it out</p>
-
-                </div>
-          </div>
-          
-          <div class="contact-container" id="contact-container-5">
-              <div class="contact-content">
-                  <div data-contact="instagram" class="contact-a-wrapper">
-                  <a href="https://www.instagram.com/akasos/" id="instagram" data-contact="instagram" class="contact-hover"><i class="fa fa-instagram"></i></a>
-                  </div>
-                  <h4>Instagram</h4>
-                  <p>Follow me</p>
-                </div>
-          </div>
-
-        </div>
-          
-          
-       
-
-
-      </section> -->
-
-    
-      <!-- <footer>
-        <div class="f-website-links-wrapper">
-        <ul class="f-website-links">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="f-logo">
-        <p class="f-logo-title">AKS</p>
-      </div> -->
-
-      <!-- <div class="f-social-media-links-wrapper">
-      <ul class="f-social-media-links">
-        <li><a><i class="fa fa-github"></i></a></li>
-        <li><a><i class="fa fa-linkedin"></i></a></li>
-        <li><a><i class="fa fa-instagram"></i></a></li>
-      </ul>
-      </div> -->
-    <!-- </footer> -->
   
   </body>
 

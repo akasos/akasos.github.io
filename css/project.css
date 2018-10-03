@@ -25,13 +25,13 @@
 .project-row {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0px;
+  
     width: 100%;
     /* border: 4px solid purple; */
 }
 .project {
   position: relative;
-  padding: 0px 8px;
+  padding: 8px 8px;
   /* border: 2px solid orange; */
 }
 
@@ -41,13 +41,13 @@
      left: 0;
      background-color: black;
      color: white;
-     margin: 0px 8px;
+     margin: 8px 8px;
      padding: 8px 16px;
     
  }
 
 .project-photo {
-    display: inline-block;
+    display: block;
     max-width: 100%;
 }
 
@@ -83,7 +83,14 @@
 
 @media(max-width: 600px)
 {
+    /* .portfolio-container {
+     align-items: center;
+    } */
+    .project-header {
+        width: 90%;
+    }
     .project {
         width: 100%;
     }
+  
 }
