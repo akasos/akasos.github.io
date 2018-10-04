@@ -2,32 +2,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25px 0px 0px 0px;
-    /* border: 1px solid blue; */
+    margin: 30px 8px 0px 8px;
+    background-color:#E8E8E8;
+    font-family: 'Nunito Sans', sans-serif;
+    
 }
 
 .contact-header {
     display: flex;
     justify-content: center;
     width: 100%;
-    /* border: 1px solid green; */
+    margin-top: 15px;
+    letter-spacing: 0.1em;
 }
-
-/* .contact-info-container {
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    margin: 25px 0px 0px 0px;
-    border: 1px solid yellow;
-} */
 
 .contact-info-container {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    color: #757575;
     margin: 25px 0px 0px 0px;
-    /* border: 3px solid purple; */
 }
 
 .contact-info {
@@ -37,7 +30,6 @@
     padding: 10px;
     color: white;
     flex: 1 0 0%;
-    /* border: 1px solid red; */
     background-color: #616161;
 }
 
@@ -50,18 +42,64 @@
 }
 
 #googleMap {
-    margin: 25px 0px 0px;
-    /* border: 1px solid green; */
+    margin: 25px 0px 0px 0px;
     width: 70%;
     height: 250px;
-    color: #757575;
 }
 
+.form-container {
+    margin: 25px 0px 0px 0px;
+    width: 70%;
+}
+
+.form-title {
+    margin: 10px 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+}
+
+.form-input-wrapper{
+    margin: 10px 0px;
+
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 0px 0px 10px;
+
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: white;
+    margin-top: 10px;
+    background-color:#616161;
+    border: none;
+    font-size: 1em;
+
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #009688;;
+}
+
+.send-icon {
+    margin: 0px 20px;
+}
+
+.submit-text {
+    margin-right: 20px;
+}
 
 @media(max-width: 1500px)
 {
     .contact-container {
-        margin: 25px 20px 0px 20px;
+        margin: 25px 28px 0px 28px;
     }
 }
 
@@ -82,14 +120,10 @@
 
     
     }
-
     .contact-info {
         margin: 3px 3px;
         flex: 1 0 44%;
     }
-
-
-   
 }
 
 @media(max-width: 768px)
@@ -100,6 +134,10 @@
     
     #googleMap {
       width: 90%;
+    }
+
+    .form-container {
+        width: 90%;
     }
 }
 
