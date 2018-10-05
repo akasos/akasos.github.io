@@ -107,7 +107,7 @@
     justify-content: center;
     width: 100%;
     letter-spacing: 0.1em;
-    margin: 30px 0px 30px 0px;
+    margin: 55px 0px 30px 0px;
     font-size: 1.125em;
 
 }
@@ -211,7 +211,7 @@
 
     .dropbtn-hobbies {
         display: flex;
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
     .hobbies-title {
@@ -223,7 +223,7 @@
     }
 
     .skills-header {
-        margin: 0px 0px 30px 0px;
+        margin: 30px 0px 30px 0px;
     }
 
 }

@@ -51,7 +51,32 @@ $(document).ready(function()
         }
     }
 
+    /*Smooth Scrolling */
+    $('a[href^="#"]').on('click', function(event){
+        //Prevent = MENU from throwing an air when toggle nav is click because of #.
+        if(event.currentTarget.className == 'toggleNav'){
+        return;
+        }
+        // console.log(event.currentTarget.className);
+        
+        let target = $(this.getAttribute('href'));
+        // console.log(target.offset().top);
+        
+        if(target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: (target.offset().top -50)
+            }, 700);
+        }
+        //If the user clicks link with side nav, make sure to close it.
+        if(sideNavOpen){
+            $('#mySidenav').css('width', "0px");
+            $('body').css("background-color", "rgba(0,0,0,0");
+             sideNavOpen = false;
+            }
+            
 
+    });
     
     /* Toggle Hobbies */
     let hobbies_open = false;
@@ -104,17 +129,5 @@ $(document).ready(function()
        
    
    }
-
-
-//    /* Google Maps */
-//    function myMap() {
-
-//     let myCenter = new google.maps.LatLng(41.222759, -111.970421);
-//     let mapCanvas = document.getElementById('googleMap');
-//     let mapOptions = {center: myCenter, zoom: 5};
-//     let map = new google.maps.Map(mapCanvas, mapOptions);
-//     var marker = new google.maps.Marker({position: myCenter});
-
-//    }
   
 });
