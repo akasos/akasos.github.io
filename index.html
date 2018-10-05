@@ -7,15 +7,17 @@
     <meta name="author" content="Austin Stephens">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!--Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko:600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla|Nunito+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Economica|Quicksand" rel="stylesheet">
+
     <!--Jquery-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -25,14 +27,14 @@
     <!--Google Maps-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw6nbw1YUqNuPGnXDLlrz1tZcpzQ4eTE0&callback=myMap"></script>
 
-
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="css/landing.css"/>
     <link rel="stylesheet" type="text/css" href="css/about.css"/>
     <link rel="stylesheet" type="text/css" href="css/project.css"/>
     <link rel="stylesheet" type="text/css" href="css/contact.css"/>
-// <!-- <link rel="stylesheet" type="text/css" href="css/footer.css"/> -->
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+
     <title>Austin Stephens</title>
 
     <script>
@@ -44,15 +46,11 @@
        let map = new google.maps.Map(mapCanvas, mapOptions);
        let marker = new google.maps.Marker({position: myCenter}); 
        marker.setMap(map);
-
- 
        }
      </script>
   </head>
   
   <body>
-
-
 
     <!--Navbar-->
       <nav>
@@ -65,7 +63,6 @@
             <a href="#contact">Contact</a>
           </div>
         
-
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn">&times;</a>
             <a href="#work">About</a>
@@ -73,9 +70,7 @@
             <a href="#contact">Contact</a>
           </div>
         </div>
-     
       </nav>
-
 
     <!--Header-->
     <header class="intro-container">
@@ -84,10 +79,8 @@
     </header>
 
 
-
     <!--Main Page Content-->
    <div class="page-content">
-
 
     <!--About-->
     <section class="about-container">
@@ -152,13 +145,11 @@
   
         <div class='resume-wrapper'><a class="resume" download><i class="material-icons download-icon">
             cloud_download</i><span class="resume-text">Download Resume</span></a></div>
-
       </div>
-
     </section>
 
-    <div class="new-theme-wrapper">
-    <hr class="new-theme">
+    <div class="new-theme-wrapper-p">
+    <hr class="new-theme-p">
     </div>
 
     <!--Portfolio-->
@@ -185,7 +176,6 @@
             <div class="project-name"><span>In the works</span></div>
             <img src="img/under_construction (1).jpg" class="project-photo" alt="under_construction">
           </div>
-
         </div>
 
         <div class="project-row">
@@ -205,14 +195,10 @@
               <div class="project-name"><span>In the works</span></div>
               <img src="img/under_construction (1).jpg" class="project-photo" alt="under_construction">
             </div>
-  
           </div>
-
-
       </div>
 
     </section>
-
 
     <!--Contact-->
     <section class="contact-container">
@@ -247,20 +233,28 @@
             send
             </i><span class="submit-text">Send Message</span></button>
         </form>
+      </div>
 
+    </section>
 
+    <div class="new-theme-wrapper-f">
+      <hr class="new-theme-f">
+    </div>
+
+    <footer class="footer-container">
+      <p class="social-title">Give me a follow</p>
+      <div class="social-icons-container">
+        <a class="social-icons" href="https://github.com/akasos"><i class="fa fa-github "></i></a>
+        <a class="social-icons" href="https://www.linkedin.com/in/austin-stephens-09143a159/"><i class="fa fa-linkedin "></i></a>
+        <a class="social-icons" href="https://www.instagram.com/akasos/"><i class="fa fa-instagram "></i></a>
+      </div>
 
       </div>
 
-
-  
-    </section>
-
-
+    </footer>
 
    </div>
   
   </body>
-
 
 </html>

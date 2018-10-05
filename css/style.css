@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 /*body*/
@@ -20,24 +19,48 @@ body, html{
     margin: 0px auto;
 }
 
-
-.new-theme-wrapper {
+.new-theme-wrapper-p {
     display: flex;
     justify-content: center;
     margin: 30px 0px;
-
 }
 
-.new-theme {
-    width: 80%;
+.new-theme-p {
+    width: 70%;
 }
 
+.new-theme-wrapper-f {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 10px 0px;
+}
+
+
+.new-theme-f {
+    margin: 0px 8px 0px 8px;
+
+    width: 100%;
+}
+
+
+@media(max-width: 1500px)
+{
+    .new-theme-f {
+        margin: 0px 28px 0px 28px;
+    }
+    
+}
 
 @media(max-width: 768px)
 {
-    .new-theme {
-        width: 90%;
+    .new-theme-p {
+        width: 100%;
+        margin: 0px 28px 0px 28px;
     }
+
+    /* .new-theme:nth-child(odd) {
+        width: 90%;
+    } */
 }
 
 

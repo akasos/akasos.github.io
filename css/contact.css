@@ -34,7 +34,7 @@
 }
 
 .phone {
-    background-color: #009688;
+    background-color: #388ea3;
 }
 
 .contact-icons {
@@ -76,7 +76,7 @@
     justify-content: center;
     height: 40px;
     color: white;
-    margin-top: 10px;
+    margin: 10px 0px 15px 0px;
     background-color:#616161;
     border: none;
     font-size: 1em;
@@ -85,7 +85,7 @@
 
 .submit-button:hover {
     cursor: pointer;
-    background-color: #009688;;
+    background-color: #009688;
 }
 
 .send-icon {
@@ -148,6 +148,13 @@
     }
 
     .phone {
-        background-color: #009688;
+        background-color: #388ea3;
     }
+}
+
+@media(max-width: 370px) 
+{
+  .email {
+      font-size: .9em;
+  }
 }
