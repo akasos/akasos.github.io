@@ -4,7 +4,6 @@
     align-items: center;
     margin: 30px 8px 0px 8px;
     background-color:#E8E8E8;
-    font-family: 'Nunito Sans', sans-serif;
     
 }
 
@@ -53,7 +52,6 @@
 
 .form-title {
     margin: 10px 0px;
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 1em;
 }
 
@@ -94,6 +92,10 @@
 .submit-text {
     margin-right: 20px;
 }
+
+.grecaptcha-badge {
+    display: none;
+  }
 
 @media(max-width: 1500px)
 {

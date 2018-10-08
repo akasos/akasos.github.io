@@ -4,7 +4,6 @@
     justify-content: center;
     margin: 25px 0px 0px 0px;
     max-width: 1516px;
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 .about-header {
@@ -99,10 +98,10 @@
 .hobby-icon {
     height: 100px;
     max-width: 100%;
+
 }
 
 .skills-header {
-    font-family: 'Nunito Sans', sans-serif;
     display: flex;
     justify-content: center;
     width: 100%;

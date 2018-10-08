@@ -14,19 +14,20 @@
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko:600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla|Nunito+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Economica|Quicksand" rel="stylesheet">
 
     <!--Jquery-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!--Javascript-->
     <script src="script/ScriptFile.js"></script>
+
+    <!--Basin Googles Invisible reCAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
     <!--Google Maps-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw6nbw1YUqNuPGnXDLlrz1tZcpzQ4eTE0&callback=myMap"></script>
 
+    <!--Style Sheets-->
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="css/landing.css"/>
@@ -35,18 +36,25 @@
     <link rel="stylesheet" type="text/css" href="css/contact.css"/>
     <link rel="stylesheet" type="text/css" href="css/footer.css"/>
 
+    <!--Title-->
     <title>Austin Stephens</title>
 
     <script>
         /* Google Maps */
        function myMap() {
-       let myCenter = new google.maps.LatLng(41.222759, -111.970421);
-       let mapCanvas = document.getElementById('googleMap');
-       let mapOptions = {center: myCenter, zoom: 6};
-       let map = new google.maps.Map(mapCanvas, mapOptions);
-       let marker = new google.maps.Marker({position: myCenter}); 
-       marker.setMap(map);
+        let myCenter = new google.maps.LatLng(41.222759, -111.970421);
+        let mapCanvas = document.getElementById('googleMap');
+        let mapOptions = {center: myCenter, zoom: 6};
+        let map = new google.maps.Map(mapCanvas, mapOptions);
+        let marker = new google.maps.Marker({position: myCenter}); 
+        marker.setMap(map);
        }
+
+       /*reCAPTCHA Form*/
+      function onSubmit(token) {
+          document.getElementById("invisible-recaptcha-form").submit();
+      }
+            
      </script>
   </head>
   
@@ -214,14 +222,15 @@
 
       </div>
 
+
       <div class="form-container">
         <p class="form-title">Send me a message.</p>
-        <form action="mailto:austinstephens424@gmail.com" method="post" target="_self">
+        <form action="https://usebasin.com/f/d69ddff89ebb" method="POST" target="_self" id="invisible-recaptcha-form" autocomplete="off">
           <div class="form-input-wrapper">
             <input class="form-input" type="text" name="name" placeholder="Name" required>
           </div>
           <div class="form-input-wrapper">
-            <input class="form-input" type="text" name="email" placeholder="Email" required>
+            <input class="form-input" id="email" type="email" name="email" placeholder="Email" required>
           </div>
           <div class="form-input-wrapper">
             <input class="form-input" type="text" name="subject" placeholder="Subject" required>
@@ -229,7 +238,7 @@
           <div class="form-input-wrapper">
             <input class="form-input" type="text" name="message" placeholder="Message" required>
           </div>
-          <button class="submit-button" type="submit" value="Send Message"><i class="material-icons send-icon">
+          <button class="submit-button g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline" type="submit" value="Send Message"><i class="material-icons send-icon">
             send
             </i><span class="submit-text">Send Message</span></button>
         </form>
