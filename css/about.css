@@ -211,6 +211,7 @@
     .dropbtn-hobbies {
         display: flex;
         margin-top: 25px;
+        background-color: #388ea3;
     }
 
     .hobbies-title {

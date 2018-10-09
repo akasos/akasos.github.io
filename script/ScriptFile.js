@@ -60,7 +60,7 @@ $(document).ready(function()
         // console.log(event.currentTarget.className);
         
         let target = $(this.getAttribute('href'));
-        // console.log(target.offset().top);
+        console.log(target);
         
         if(target.length) {
             event.preventDefault();

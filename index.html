@@ -40,11 +40,11 @@
     <title>Austin Stephens</title>
 
     <script>
-        /* Google Maps */
+      //   /* Google Maps */
        function myMap() {
         let myCenter = new google.maps.LatLng(41.222759, -111.970421);
         let mapCanvas = document.getElementById('googleMap');
-        let mapOptions = {center: myCenter, zoom: 6};
+        let mapOptions = {center: myCenter, zoom: 6, disableDefaultUI: true, zoomControl: false, gestureHandling: 'none'};
         let map = new google.maps.Map(mapCanvas, mapOptions);
         let marker = new google.maps.Marker({position: myCenter}); 
         marker.setMap(map);
@@ -81,7 +81,7 @@
       </nav>
 
     <!--Header-->
-    <header class="intro-container">
+    <header class="intro-container" id="top">
       <img class="intro-image" src="/img/foggy-forest.jpg" alt="foggy forest"/>
       <h1 id="intro-introduction" class="intro-introduction">Hello, I'am Austin Stephens</h1>
     </header>
@@ -225,7 +225,7 @@
 
       <div class="form-container">
         <p class="form-title">Send me a message.</p>
-        <form action="https://usebasin.com/f/722c7e006e65" method="POST" target="_self" id="invisible-recaptcha-form" autocomplete="off">
+        <form action="https://usebasin.com/f/722c7e006e65" method="POST" target="_blank" id="invisible-recaptcha-form" autocomplete="off">
           <div class="form-input-wrapper">
             <input class="form-input" type="text" name="name" placeholder="Name" required>
           </div>
@@ -251,13 +251,13 @@
     </div>
 
     <footer class="footer-container">
+      <a class="top-of-page-wrapper" href="#top"><i class="fa fa-arrow-up up-arrow" aria-hidden="true"></i><span class="top-of-page-text">To the top</span></a>
       <p class="social-title">Give me a follow</p>
       <div class="social-icons-container">
         <a class="social-icons" href="https://github.com/akasos"><i class="fa fa-github "></i></a>
         <a class="social-icons" href="https://www.linkedin.com/in/austin-stephens-09143a159/"><i class="fa fa-linkedin "></i></a>
         <a class="social-icons" href="https://www.instagram.com/akasos/"><i class="fa fa-instagram "></i></a>
       </div>
-
       </div>
 
     </footer>
