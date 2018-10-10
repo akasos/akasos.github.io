@@ -35,6 +35,9 @@
   /* border: 2px solid orange; */
 }
 
+.project:hover {
+    opacity: .6;
+}
  .project-name {
      position: absolute;
      top: 0;
@@ -45,6 +48,7 @@
      padding: 8px 16px;
     
  }
+
 
 .project-photo {
     display: block;
