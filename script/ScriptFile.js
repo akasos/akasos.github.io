@@ -10,7 +10,7 @@ $(document).ready(function()
     function swapText()
     {
 
-        if(window.innerWidth <=768)
+        if(window.innerWidth <= 768)
         {
             $("#intro-introduction").text("Austin Stephens");     
         }
@@ -136,14 +136,14 @@ $(document).ready(function()
 
    /*Load More Projects */
    $('.project-row-wrapper').slice(0, 1).show();
-   $('.load-more-wrapper').on('click', function(e){
+   $('.load-projects-wrapper').on('click', function(e){
         e.preventDefault();
         if(window.innerWidth > 600)
         {
             $('.project-row-wrapper:hidden').slice(0, 1).slideDown();
             if($('.project-row-wrapper:hidden').length == 0)
             {
-                $('.load-more-wrapper').fadeOut('slow');
+                $('.load-projects-wrapper').fadeOut('slow');
             }
             if(window.innerWidth > 992)
             {
@@ -158,19 +158,28 @@ $(document).ready(function()
                 }, 700);
             }
          }
-         else {
+         else 
+         {
             $('.project-row-wrapper:hidden').slice(0, 1).show();
             if($('.project-row-wrapper:hidden').length == 0)
             {
-                $('.load-more-wrapper').fadeOut('slow');
+                $('.load-projects-wrapper').fadeOut('slow');
             }
          }
 
 
-    
-
-
    });
+
+    /*Hide More Projects */
+//    $('.hide-projects-container').on('click', function(e){
+//        e.preventDefault();
+
+//        if($('.project-row-wrapper:visible').length > 1)
+//        {
+//         $('.project-row-wrapper:visible').slice(-1).slideUp();
+//         $('.load-projects-wrapper').fadeIn('slow');
+//        }
+//    });
    
   
 });

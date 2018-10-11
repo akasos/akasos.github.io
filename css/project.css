@@ -59,13 +59,13 @@
     max-width: 100%;
 }
 
-.load-more-container {
+.load-projects-container {
     display: flex;
     margin: 30px 28px;
     justify-content: center;
 
 }
-.load-more-wrapper {
+.load-projects-wrapper {
     display: flex;
     justify-content: baseline;
     align-items: center;
@@ -81,7 +81,7 @@
     margin: 0px 8px;
 }
 
-.load-more-text {
+.load-projects-text {
     margin-right: 8px;
 }
 
