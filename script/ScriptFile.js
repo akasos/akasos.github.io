@@ -61,13 +61,16 @@ $(document).ready(function()
         
         let target = $(this.getAttribute('href'));
         console.log(target);
-        
-        if(target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: (target.offset().top -50)
-            }, 700);
-        }
+        if(window.innerWidth > 600)
+        {
+            if(target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: (target.offset().top -50)
+                }, 700);
+            }
+         }
+    
         //If the user clicks link with side nav, make sure to close it.
         if(sideNavOpen){
             $('#mySidenav').css('width', "0px");
@@ -135,30 +138,33 @@ $(document).ready(function()
    $('.project-row-wrapper').slice(0, 1).show();
    $('.load-more-wrapper').on('click', function(e){
         e.preventDefault();
-        $('.project-row-wrapper:hidden').slice(0, 1).slideDown();
-        if($('.project-row-wrapper:hidden').length == 0)
+        if(window.innerWidth > 600)
         {
-            $('.load-more-wrapper').fadeOut('slow');
-        }
-        if(window.innerWidth > 992)
-        {
-            $('html,body').animate({
-                scrollTop: $(this).offset().top - 500
-            }, 700);
-        }
-        else if(window.innerHeight > 600)
-        {
-            $('html,body').animate({
-                scrollTop: $(this).offset().top - 300
-            }, 700);
-        }
-
-        else if(window.innerHeight <= 600)
-        {
-            $('html,body').animate({
-                scrollTop: $(this).offset().top
-            }, 700);
-        }
+            $('.project-row-wrapper:hidden').slice(0, 1).slideDown();
+            if($('.project-row-wrapper:hidden').length == 0)
+            {
+                $('.load-more-wrapper').fadeOut('slow');
+            }
+            if(window.innerWidth > 992)
+            {
+                $('html,body').animate({
+                    scrollTop: $(this).offset().top - 400
+                }, 700);
+            }
+            else if(window.innerWidth > 600)
+            {
+                $('html,body').animate({
+                    scrollTop: $(this).offset().top - 200
+                }, 700);
+            }
+         }
+         else {
+            $('.project-row-wrapper:hidden').slice(0, 1).show();
+            if($('.project-row-wrapper:hidden').length == 0)
+            {
+                $('.load-more-wrapper').fadeOut('slow');
+            }
+         }
 
 
     
