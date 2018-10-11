@@ -22,6 +22,10 @@
      /* border: 1px solid green; */
 }
 
+.project-row-wrapper {
+    display: none;
+}
+
 .project-row {
     display: flex;
     justify-content: space-between;
@@ -53,6 +57,32 @@
 .project-photo {
     display: block;
     max-width: 100%;
+}
+
+.load-more-container {
+    display: flex;
+    margin: 30px 28px;
+    justify-content: center;
+
+}
+.load-more-wrapper {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+    background-color: #ccc;
+   
+}
+
+.down-arrow {
+    margin: 0px 8px;
+}
+
+.load-more-text {
+    margin-right: 8px;
 }
 
 

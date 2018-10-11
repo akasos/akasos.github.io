@@ -129,5 +129,42 @@ $(document).ready(function()
        
    
    }
+
+
+   /*Load More Projects */
+   $('.project-row-wrapper').slice(0, 1).show();
+   $('.load-more-wrapper').on('click', function(e){
+        e.preventDefault();
+        $('.project-row-wrapper:hidden').slice(0, 1).slideDown();
+        if($('.project-row-wrapper:hidden').length == 0)
+        {
+            $('.load-more-wrapper').fadeOut('slow');
+        }
+        if(window.innerWidth > 992)
+        {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top - 500
+            }, 700);
+        }
+        else if(window.innerHeight > 600)
+        {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top - 300
+            }, 700);
+        }
+
+        else if(window.innerHeight <= 600)
+        {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 700);
+        }
+
+
+    
+
+
+   });
+   
   
 });
