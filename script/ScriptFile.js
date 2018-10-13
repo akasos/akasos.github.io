@@ -181,5 +181,16 @@ $(document).ready(function()
 //        }
 //    });
    
+
+   /*Google Map*/
+   myMap();
+   function myMap() {
+    let myCenter = new google.maps.LatLng(41.222759, -111.970421);
+    let mapCanvas = document.getElementById('googleMap');
+    let mapOptions = {center: myCenter, zoom: 6, disableDefaultUI: true, zoomControl: false, gestureHandling: 'none'};
+    let map = new google.maps.Map(mapCanvas, mapOptions);
+    let marker = new google.maps.Marker({position: myCenter}); 
+    marker.setMap(map);
+   }
   
 });
