@@ -192,6 +192,4 @@ $(document).ready(function()
     let marker = new google.maps.Marker({position: myCenter}); 
     marker.setMap(map);
  }
-
-  
 });
