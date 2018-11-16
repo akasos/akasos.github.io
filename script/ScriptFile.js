@@ -16,7 +16,7 @@ $(document).ready(function()
         }
         else
         {
-            $("intro-introduction").text("Hello, I'am Austin Stephens");     
+            $("intro-introduction").text("Austin Stephens");     
         }
     }
 
@@ -80,6 +80,28 @@ $(document).ready(function()
             
 
     });
+
+    /*Link highlighter */
+    // const links = document.querySelectorAll('.nav-links a');
+    // const highlight = document.createElement('span');
+    // highlight.classList.add('highlight');
+    // document.body.append(highlight);
+
+    // function highlightLink() {
+    //     console.log('test');
+    //     const linkCoords = this.getBoundingClientRect();
+    //     const coords = {
+    //         width: linkCoords.width,
+    //         height: linkCoords.height,
+    //         top: linkCoords.top + window.scrollY,
+    //         left: linkCoords.left + window.scrollX
+    //     }
+    //     highlight.style.width = `${coords.width}px`;
+    //     highlight.style.height = `${coords.height}px`;
+    //     highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`
+    //   }
+
+    //   links.forEach(link => link.addEventListener('mouseenter', highlightLink));
     
     /* Toggle Hobbies */
     let hobbies_open = false;
@@ -183,7 +205,7 @@ $(document).ready(function()
    
 
    /*Google Map*/
-  myMap();
+   myMap();
  function myMap() {
     let myCenter = new google.maps.LatLng(41.222759, -111.970421);
     let mapCanvas = document.getElementById('googleMap');
@@ -192,4 +214,7 @@ $(document).ready(function()
     let marker = new google.maps.Marker({position: myCenter}); 
     marker.setMap(map);
  }
+
+
 });
+

@@ -36,6 +36,18 @@ nav {
     
 }
 
+/* .highlight {
+    transition: all 0.2s;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 0;
+    background-color: rgba(191, 196, 197, .7);
+    left: 0%;
+    z-index: ;
+    border-radius: 2px;
+    display: block;
+  } */
+
 .nav-links a:hover {
     background-color: rgba(191, 196, 197, 0.699);
 }
