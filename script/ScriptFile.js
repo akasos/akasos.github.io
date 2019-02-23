@@ -130,8 +130,8 @@ $(document).ready(function() {
     let skill1 = document.getElementById("html");
     let skill2 = document.getElementById("angular");
     let skill3 = document.getElementById("java");
-    skill1.style.width = `${wrapper.offsetWidth * 0.4}px`;
-    skill2.style.width = `${wrapper.offsetWidth * 0.1}px`;
+    skill1.style.width = `${wrapper.offsetWidth * 0.5}px`;
+    skill2.style.width = `${wrapper.offsetWidth * 0.3}px`;
     skill3.style.width = `${wrapper.offsetWidth * 0.5}px`;
   }
 
