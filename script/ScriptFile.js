@@ -131,8 +131,8 @@ $(document).ready(function() {
     let skill2 = document.getElementById("angular");
     let skill3 = document.getElementById("java");
     skill1.style.width = `${wrapper.offsetWidth * 0.5}px`;
-    skill2.style.width = `${wrapper.offsetWidth * 0.3}px`;
-    skill3.style.width = `${wrapper.offsetWidth * 0.5}px`;
+    skill2.style.width = `${wrapper.offsetWidth * 0.2}px`;
+    skill3.style.width = `${wrapper.offsetWidth * 0.4}px`;
   }
 
   /*Load More Projects */
@@ -187,7 +187,7 @@ $(document).ready(function() {
   /*Google Map*/
   myMap();
   function myMap() {
-    let myCenter = new google.maps.LatLng(41.222759, -111.970421);
+    let myCenter = new google.maps.LatLng(39.7642543, -104.9955382);
     let mapCanvas = document.getElementById("googleMap");
     let mapOptions = {
       center: myCenter,
