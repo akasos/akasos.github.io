@@ -3,6 +3,5 @@
 # /logs/*.txt    relative to the root of the repository. 
 # logs/*.log
 # /logs
-Notes.txt
 .vscode/
-.gitignore
+.idea/
