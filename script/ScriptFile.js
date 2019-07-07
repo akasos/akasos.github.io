@@ -187,7 +187,7 @@ $(document).ready(function() {
   /*Google Map*/
   myMap();
   function myMap() {
-    let myCenter = new google.maps.LatLng(39.7642543, -104.9955382);
+    let myCenter = new google.maps.LatLng(42.360253,  -71.058291);
     let mapCanvas = document.getElementById("googleMap");
     let mapOptions = {
       center: myCenter,
