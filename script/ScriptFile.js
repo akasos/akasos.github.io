@@ -15,13 +15,13 @@ $(document).ready(function() {
 
   function sideNav() {
     if (window.innerWidth <= 768) {
-      $(".toggleNav").on("click", function() {
+      $(".navigation__toggle-btn").on("click", function() {
         $("#mySidenav").css("width", "250px");
         $("body").css("background-color", "rgba(0,0,0,0.4)");
         sideNavOpen = true;
       });
 
-      $(".closebtn").on("click", function() {
+      $(".navigation__side-nav-btn--close").on("click", function() {
         $("#mySidenav").css("width", "0px");
         $("body").css("background-color", "rgba(0,0,0,0");
         sideNavOpen = false;
