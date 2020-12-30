@@ -1,0 +1,40 @@
+.header {
+  height: 95vh;
+  background-image: url(../img/other/mt-rainer.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  max-width: 1500px;
+  margin: 35px auto 0 auto;
+}
+
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 15px;
+  background-color: hsla(320, 2%, 35%, 0.8);
+  padding: 10px;
+  animation: moveInTop 1s ease-in;
+
+}
+
+.heading-primary--main::first-letter{
+  margin-left: 10px;
+}

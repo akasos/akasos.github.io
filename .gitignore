@@ -6,3 +6,5 @@
 .vscode/
 .idea/
 notes.txt
+node_modules
+akasos.github.io.iml
