@@ -130,7 +130,7 @@ $(document).ready(function() {
     let skill1 = document.getElementById("html");
     let skill2 = document.getElementById("spring");
     let skill3 = document.getElementById("java");
-    skill1.style.width = `${wrapper.offsetWidth * 0.6}px`;
+    skill1.style.width = `${wrapper.offsetWidth * 0.8}px`;
     skill2.style.width = `${wrapper.offsetWidth * 0.4}px`;
     skill3.style.width = `${wrapper.offsetWidth * 0.5}px`;
   }
